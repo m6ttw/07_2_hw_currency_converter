@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         },
         mounted(){
-            this.getExchangeRates()
+            this.getExchangeRates();
         },
         methods: {
             getExchangeRates: function(){
@@ -18,6 +18,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .then(res => res.json())
                 .then(data => this.allExchangeRates = data.rates)
             },
+            convertCurrency: function(){
+
+            }
         }
     })
 })
